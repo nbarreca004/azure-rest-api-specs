@@ -443,7 +443,6 @@ model BlockLookupList {
 model SignedIdentifiers {
   /** The array of signed identifiers. */
   @Xml.unwrapped
-  @Xml.name("SignedIdentifier")
   items: Array<SignedIdentifier>;
 }
 
@@ -2342,6 +2341,7 @@ enum BlobDeleteType {
 enum BlobDeleteTypeGo {
   /** Permanently delete the blob. */
   Permanent: "Permanent",
+
   /** Deprecated */
   None: "None",
 }
